@@ -1,0 +1,31 @@
+
+  .switch-container{
+    right:50%;
+    width: 10%; 
+}
+
+  .form-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .form-check-input{
+    margin-top: 0;
+    width: 4rem!important;
+    height: 1.5rem!important;
+    background-color: rgb(218, 208, 218)!important;
+    border: none;
+  }
+
+  .form-check-input:active{
+     border: none!important;
+  }
+
+
+
+/* .off-switch{
+   background-color: yellow!important;
+   border: 1px solid red;
+} */
