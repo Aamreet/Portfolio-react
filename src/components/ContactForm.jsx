@@ -27,16 +27,16 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-indigo-300 bg-opacity-10  mx-auto w-[40%] rounded-xl p-4">
+    <div className=" bg-indigo-300 bg-opacity-10 xs:static xs:w-[80%] xs:mx-auto rounded-xl p-4   w-[100%] ">
       <form
-        className="flex justify-center flex-column items-center gap-2"
+        className="w-full flex justify-center flex-column items-center gap-4"
         onSubmit={onSubmit}
       >
         <label className="mt-2 font-bold w-[80%] text-start" htmlFor="name">
           Name:
         </label>
         <input
-          className=" w-[80%] rounded p-2"
+          className=" xs:w-[80%] rounded p-2"
           type="text"
           name="name"
           placeholder="Enter your Name"
@@ -47,7 +47,7 @@ export default function ContactForm() {
           Email
         </label>
         <input
-          className=" w-[80%] rounded p-2"
+          className=" xs:w-[80%] rounded p-2"
           type="email"
           name="email"
           placeholder="Email"
@@ -58,7 +58,7 @@ export default function ContactForm() {
           Message:
         </label>
         <textarea
-          className=" w-[80%] rounded p-2 pt-1"
+          className=" xs:w-[80%] w-full rounded p-2 pt-1"
           name="message"
           placeholder="Enter you thoughts..."
           required
