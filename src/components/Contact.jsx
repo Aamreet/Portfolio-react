@@ -1,12 +1,15 @@
-import React from "react";
-import { CONTACT } from "../constants";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+
+import { CONTACT } from "../constants";
+import ContactForm from "./ContactForm";
 
 import { motion } from "framer-motion";
 
 import { FaArrowRight } from "react-icons/fa";
 
 const Contact = () => {
+  let [showForm, setShowForm] = useState(true);
   const checked = useSelector((store) => {
     return store.switchBoard;
   });
@@ -27,13 +30,7 @@ const Contact = () => {
         className="text-center tracking-tighter"
       >
         <p className="my-4 ">{CONTACT.address}</p>
-
-        <a
-          className="btn btn-primary"
-          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT.email}&su=Hello%20there&body=This%20is%20the%20body%20of%20the%20email.`}
-        >
-          <p>Send mail</p>
-        </a>
+          <ContactForm></ContactForm>
       </motion.div>
     </div>
   );
