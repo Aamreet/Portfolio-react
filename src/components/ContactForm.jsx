@@ -36,7 +36,7 @@ export default function ContactForm() {
           Name:
         </label>
         <input
-          className=" xs:w-[80%] rounded p-2"
+          className="w-[98%] xs:w-[80%] rounded p-2"
           type="text"
           name="name"
           placeholder="Enter your Name"
@@ -47,7 +47,7 @@ export default function ContactForm() {
           Email
         </label>
         <input
-          className=" xs:w-[80%] rounded p-2"
+          className="w-[98%] xs:w-[80%] rounded p-2"
           type="email"
           name="email"
           placeholder="Email"
@@ -58,7 +58,7 @@ export default function ContactForm() {
           Message:
         </label>
         <textarea
-          className=" xs:w-[80%] w-full rounded p-2 pt-1"
+          className=" xs:w-[80%] w-[98%] rounded p-2 pt-1"
           name="message"
           placeholder="Enter you thoughts..."
           required
