@@ -27,7 +27,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className=" bg-indigo-300 bg-opacity-10 xs:static xs:w-[80%] xs:mx-auto rounded-xl p-4   w-[100%] ">
+    <div className=" bg-indigo-300 bg-opacity-10  rounded-xl p-2   w-[100%] ">
       <form
         className="w-full flex justify-center flex-column items-center gap-4"
         onSubmit={onSubmit}

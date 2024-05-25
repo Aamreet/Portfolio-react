@@ -14,23 +14,26 @@ const Contact = () => {
     return store.switchBoard;
   });
   return (
-    <div className=" border-b border-neutral-900 pb-20">
-      <motion.h1
+    <div className="mt-[20px] mx-auto flex flex-wrap  items-star justify-center  gap-2 border-b border-neutral-900 pb-20 ">
+      <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className={`my-10 text-center text-4xl ${checked ? "" : "text-black"}`}
+        className="w-[60vw] md:w-[45%] text-center align-top"
       >
-        Get In Touch
-      </motion.h1>
+        <h1 className={` mt-4  text-center text-4xl ${checked ? "" : "text-black"}`}>
+          Get In Touch
+        </h1>
+        <p className="my-4 ">{CONTACT.address}</p>
+      </motion.div>
+
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 40 }}
         transition={{ duration: 1.5 }}
-        className="text-center tracking-tighter"
+        className="text-center tracking-tighter w-[80vw] md:w-[50%]"
       >
-        <p className="my-4 ">{CONTACT.address}</p>
-          <ContactForm></ContactForm>
+        <ContactForm></ContactForm>
       </motion.div>
     </div>
   );

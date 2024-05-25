@@ -21,12 +21,12 @@ function Project() {
       </motion.h1>
       <div>
         {PROJECTS.map((project, i) => (
-          <div key={i} className="mb-8 flex flex-wrap lg:justify-center">
+          <div key={i} className="mb-8 flex flex-wrap lg:justify-center lg:p-0 pl-8">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="w-full lg:w-1/4"
+              className=" w-1/4"
             >
               <img
                 src={project.image}

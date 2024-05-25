@@ -36,23 +36,16 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              onAnimationComplete={handleAnimationComplete} // Call handleAnimationComplete when animation finishes
+              onAnimationComplete={handleAnimationComplete}
               className="pb-16 text-5xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
               style={{ color: `${checked ? "#ffffffb0" : "black"}` }}
             >
               Amreet Gandi
             </motion.h1>
             <p className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-200 bg-clip-text tracking-tight text-transparent h-[120px] 2xs:h-[75px] text-4xl font-semibold  xs:h-auto">
-              {/* Show typing animation only when animation is complete */}
               {animationComplete && (
                 <TypeAnimation
-                  sequence={[
-                    // Same substring at the start will only be typed once, initially
-                    "Frontend Web Developer",
-                    1000,
-                    "",
-                    1000,
-                  ]}
+                  sequence={["Frontend Web Developer", 1000, "", 1000]}
                   speed={50}
                   repeat={Infinity}
                 />
@@ -75,8 +68,8 @@ const Hero = () => {
           <div className="flex justify-center">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: `${checked?"0.4":"0.7"}` }}
-              transition={{ duration: 1, delay: 1 , function:easeInOut}}
+              animate={{ x: 0, opacity: `${checked ? "0.4" : "0.7"}` }}
+              transition={{ duration: 1, delay: 1, function: easeInOut }}
               className={`w-[60%] lg:w-[60%] rounded-xl `}
               src={profile}
               alt="profile"
