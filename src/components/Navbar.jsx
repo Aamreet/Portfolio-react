@@ -23,7 +23,7 @@ const Navbar = () => {
     return store.switchBoard;
   });
   return (
-    <nav className=" mb-[30px] flex items-center flex-wrap justify-between py-6">
+    <nav className=" mb-[25px] flex items-center flex-wrap justify-between pt-4">
       <motion.div
         whileHover={hoverEffect}
         className=" w-12 h-12 bg-cover bg-center border-none rounded xs:w-20 xs:h-20 "
@@ -37,12 +37,12 @@ const Navbar = () => {
       <div className="m-8 flex items-center justigy-center gap-4 text-2xl">
       <motion.div whileHover={hoverEffect}>
           <a target="_blank" href="https://leetcode.com/u/Saigojo/">
-            <SiLeetcode color={!checked ? "black" : ""} />
+            <SiLeetcode color={!checked ? "black" : ""} size={40} />
           </a>
         </motion.div>
         <motion.div whileHover={hoverEffect}>
           <a target="_blank" href="https://github.com/Aamreet/">
-            <FaGithub color={!checked ? "black" : ""} />
+            <FaGithub color={!checked ? "black" : ""} size={40} />
           </a>
         </motion.div>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
             target="_blank"
             href="https://www.linkedin.com/in/amreet-gandi-487747208/"
           >
-            <FaLinkedin color={!checked ? "black" : ""} />
+            <FaLinkedin color={!checked ? "black" : ""} size={40}/>
           </a>
         </motion.div>
        

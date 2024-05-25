@@ -1,8 +1,8 @@
 
   .switch-container{
-    right:50%;
-    width: 10%; 
-}
+    width: 15%; 
+   margin-left: 25px;
+  }
 
   .form-check{
     display: flex;
@@ -13,8 +13,8 @@
 
   .form-check-input{
     margin-top: 0;
-    width: 4rem!important;
-    height: 1.5rem!important;
+    width: 2.5rem!important;
+    height: 1rem!important;
     background-color: rgb(218, 208, 218)!important;
     border: none;
   }
